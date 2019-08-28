@@ -51,10 +51,10 @@ sess = tf.Session()
 sess.run(init)
 
 # plot the real data
-fig = plt.figure()
-ax = fig.add_subplot(1,1,1)
-ax.scatter(x_data, y_data)
-plt.ion()
+fig = plt.figure()          #生成圖片框
+ax = fig.add_subplot(1,1,1) #增加x軸
+ax.scatter(x_data, y_data)  #用點的形勢將data plot上來
+plt.ion()                   #使得show不終止函數
 plt.show()
 
 for i in range(1000):
